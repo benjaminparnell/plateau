@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/clocklimited/plateau.git"
+    "url": "git+ssh://git@github.com/benjaminparnell/plateau.git"
   },
   "author": "Ben Parnell <benjaminparnell.94@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/clocklimited/plateau/issues"
+    "url": "https://github.com/benjaminparnell/plateau/issues"
   },
-  "homepage": "https://github.com/clocklimited/plateau#readme",
+  "homepage": "https://github.com/benjaminparnell/plateau#readme",
   "dependencies": {
     "aws-sdk": "^2.4.7",
     "bunyan": "^1.8.1",
