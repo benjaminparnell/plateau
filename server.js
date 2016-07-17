@@ -75,5 +75,5 @@ app.get('/:id', (req, res, next) => {
 })
 
 app.listen(port, () => {
-  log.info(`plateau listening on post ${port}`)
+  log.info(`plateau listening on port ${port}`)
 })
