@@ -4,6 +4,8 @@
   "description": "S3 backed image host",
   "main": "server.js",
   "scripts": {
+    "precommit": "npm test",
+    "prepush": "npm test",
     "lint": "standard",
     "test": "npm run lint",
     "start": "node server.js"
@@ -29,6 +31,7 @@
     "shortid": "^2.2.6"
   },
   "devDependencies": {
+    "husky": "^0.11.5",
     "standard": "^7.1.2"
   }
 }
