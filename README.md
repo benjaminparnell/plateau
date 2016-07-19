@@ -1,4 +1,4 @@
-# plateau
+# plateau :sunrise:
 
 S3 backed image host in Node.js.
 
