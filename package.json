@@ -8,7 +8,8 @@
     "prepush": "npm test",
     "lint": "standard",
     "test": "npm run lint",
-    "start": "node server.js"
+    "start": "node server.js",
+    "docker-build": "docker build -t benparnell/plateau:$(node -e \"console.log(require('./package.json').version)\") ."
   },
   "repository": {
     "type": "git",
