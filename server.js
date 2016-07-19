@@ -4,7 +4,7 @@ const express = require('express')
 const levelup = require('level')
 const bunyan = require('bunyan')
 const log = bunyan.createLogger({ name: 'plateau' })
-const db = levelup('/var/data/plateau/db')
+const db = levelup(process.env.LEVELDB_PATH)
 const AWS = require('aws-sdk')
 
 AWS.config.region = process.env.AWS_DEFAULT_REGION

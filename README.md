@@ -26,6 +26,7 @@ AWS_SECRET_ACCESS_KEY=supersecretkey
 AWS_DEFAULT_REGION=eu-west-1
 AWS_BUCKET=my.bucket.name
 API_KEY=123
+LEVELDB_PATH=/var/data/plateau/db
 ```
 
 You can also set `PORT` to run plateau on a port that is not 9001.
