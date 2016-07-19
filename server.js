@@ -6,11 +6,15 @@ const bunyan = require('bunyan')
 const log = bunyan.createLogger({ name: 'plateau' })
 const db = levelup(process.env.LEVELDB_PATH)
 const AWS = require('aws-sdk')
+const favicon = require('serve-favicon')
+const path = require('path')
 
 AWS.config.region = process.env.AWS_DEFAULT_REGION
 
 const app = express()
 const port = process.env.PORT || 9001
+
+app.use(favicon(path.join(__dirname, 'favicon.ico')))
 
 const createUploadHandler = require('./lib/handle-upload')
 const createRetrieveHandler = require('./lib/handle-retrieve')
