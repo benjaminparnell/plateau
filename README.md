@@ -1,4 +1,4 @@
-# plateau :sunrise:
+# plateau :sunrise: [![Build Status](https://travis-ci.org/benjaminparnell/plateau.svg?branch=master)](https://travis-ci.org/benjaminparnell/plateau)
 
 S3 backed image host in Node.js.
 
