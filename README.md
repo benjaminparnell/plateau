@@ -29,7 +29,7 @@ API_KEY=123
 LEVELDB_PATH=/var/data/plateau/db
 ```
 
-You can also set `PORT` to run plateau on a port that is not 9001.
+You can also set `PORT` to run plateau on a port that is not 9001 (the default port).
 
 After these are set, run `node server.js` to run plateau.
 
@@ -39,7 +39,7 @@ Running the following command will upload your image to the S3 bucket and return
 the URL to your image, or a 403 if your API key is incorrect.
 
 ```sh
-curl -XPOST -sf -F apiKey=$YOUR_API_KEY -F file="@./file.jpg" http://127.0.0.1:9001
+curl -XPOST -H "X-API-KEY: $YOUR_API_KEY" -F file="@./file.jpg" http://127.0.0.1:9001
 ```
 
 ## License
